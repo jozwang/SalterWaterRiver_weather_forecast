@@ -4,6 +4,9 @@ import pandas as pd
 from datetime import date, timedelta
 import database
 
+# --- THIS IS THE NEW LINE ---
+database.init_db() # Create the database and tables if they don't exist
+
 st.set_page_config(page_title="BoM Weather Comparison", layout="wide")
 
 st.title("🌦️ BoM Weather: Forecast vs. Observation")
